@@ -15,12 +15,12 @@ if [ ! -f node_modules/.bin/tsc ]; then
   exit 1
 else
 
-  echo ℹ️ tsc version: "$(/node_modules/.bin/tsc --version)"
+  echo ℹ️ tsc version: "$(node_modules/.bin/tsc --version)"
 
   echo "::group::📝 Running tsc with reviewdog 🐶 ..."
 
   # shellcheck disable=SC2086
-  /node_modules/.bin/tsc ${INPUT_TSC_FLAGS} |
+  node_modules/.bin/tsc ${INPUT_TSC_FLAGS} |
     reviewdog -f=tsc \
       -name="${INPUT_TOOL_NAME}" \
       -reporter="${INPUT_REPORTER}" \
