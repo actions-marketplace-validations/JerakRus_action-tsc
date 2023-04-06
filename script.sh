@@ -4,13 +4,13 @@ cd "${GITHUB_WORKSPACE}/${INPUT_WORKDIR}" || exit 1
 
 export REVIEWDOG_GITHUB_API_TOKEN="${INPUT_GITHUB_TOKEN}"
 
-if [ ! -f /node_modules/.bin/tsc ]; then
+if [ ! -f node_modules/.bin/tsc ]; then
   echo "::group::🔄 Running yarn install to install tsc ..."
   yarn install
   echo "::endgroup::"
 fi
 
-if [ ! -f /node_modules/.bin/tsc ]; then
+if [ ! -f node_modules/.bin/tsc ]; then
   echo "❌ Unable to locate or install tsc. Did you provide a workdir which contains a valid package.json?"
   exit 1
 else
