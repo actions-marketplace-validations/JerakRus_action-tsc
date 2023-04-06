@@ -1,4 +1,4 @@
-name: 'Run tsc with reviewdog'
+name: 'Run tsc from node_modules with reviewdog'
 description: '🐶 Run tsc with reviewdog to improve code checking and review experience for TypeScript-based modules.'
 author: 'EPMatt'
 inputs:
