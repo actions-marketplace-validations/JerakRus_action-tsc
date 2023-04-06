@@ -1,4 +1,4 @@
-# reviewdog-action-tsc
+# action-tsc
 
 ![Maintained](https://img.shields.io/badge/maintained-yes-brightgreen) 
 [![Tests](https://github.com/EPMatt/reviewdog-action-tsc/actions/workflows/test.yml/badge.svg)](https://github.com/EPMatt/reviewdog-action-tsc/actions/workflows/test.yml)
