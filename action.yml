@@ -1,6 +1,6 @@
 name: 'Run tsc with reviewdog'
 description: '🐶 Run tsc with reviewdog to improve code checking and review experience for TypeScript-based modules.'
-author: 'EPMatt'
+author: 'EPMatt && JerakRus'
 inputs:
   github_token:
     description: 'GITHUB_TOKEN'
@@ -74,7 +74,6 @@ runs:
         INPUT_REVIEWDOG_FLAGS: ${{ inputs.reviewdog_flags }}
         INPUT_TOOL_NAME: ${{ inputs.tool_name }}
         INPUT_TSC_FLAGS: ${{ inputs.tsc_flags }}
-
 
 
 branding:
